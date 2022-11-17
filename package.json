@@ -1,0 +1,25 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "Test Automation Framework",
+  "main": "index.js",
+  "author": "Dmytro Hoida",
+  "license": "MIT",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^7.25.4",
+    "@wdio/cli": "^7.25.4",
+    "@wdio/cucumber-framework": "^7.25.4",
+    "@wdio/local-runner": "^7.25.4",
+    "@wdio/spec-reporter": "^7.25.4",
+    "chromedriver": "^107.0.2",
+    "wdio-chromedriver-service": "^8.0.0"
+  },
+  "scripts": {
+    "test": "wdio run wdio.conf.js",
+    "test_add_remove_elements": "wdio run wdio.conf.js --spec add_remove_elements.feature",
+    "test_tick_untick_checkboxes": "wdio run wdio.conf.js --spec checkboxes.feature",
+    "test_hovers": "wdio run wdio.conf.js --spec hovers.feature",
+    "test_key_presses": "wdio run wdio.conf.js --spec key_presses.feature",
+    "test_login": "wdio run wdio.conf.js --spec login.feature"
+  }
+}
